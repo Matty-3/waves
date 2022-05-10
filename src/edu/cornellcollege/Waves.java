@@ -17,6 +17,7 @@ public class Waves extends JFrame implements ActionListener {
     private static final int FRAME_WIDTH = 768;
     private static final int FRAME_HEIGHT = 768;
     private static final String FRAME_TITLE = "Waves";
+    ;
 
     // Names of menus
     private static final String FILE = "File";
