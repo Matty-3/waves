@@ -8,9 +8,17 @@ import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
+// import statements related to ImageIO
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * This class gives us a rectangular region
@@ -358,5 +366,14 @@ public class WavesPanel extends JPanel {
         } // for
 
         g2D.drawImage(image, null, null);
+
+        /* ImageIO
+        try {
+            ImageIO.write(image, "png", new File("C:\\Users\\mattb\\Downloads\\waves-master\\waves-master\\src\\edu\\cornellcollege"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+         */
     } // paintComponent( Graphics )
 } // JPanel
